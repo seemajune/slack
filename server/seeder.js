@@ -1,11 +1,16 @@
 Meteor.startup(function() {
-  console.log(Messages.find().count());
-  if (Messages.find().count() < 40000){
-    console.log("it's less than 40");
-    for(var i = 0; i < 10; i++){
-      console.log("i = ", i);
-      Messages.insert({greeting: "A dummy message."})
+  Factory.define('message', Messages, {
+    text: function() {
+      return Fake.sentence();
     }
-    console.log(Messages.find({}).fetch());
-  }
+  });
+
+  // Add this if you want to remove all messages before seeding
+  Messages.remove({});
+
+  if (Messages.find({}).count() === 0) {
+    _(10).times(function(n) {
+      Factory.create('message');
+    });
+  } 
 });
