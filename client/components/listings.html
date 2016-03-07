@@ -1,9 +1,15 @@
 <template name="listings">
-  <div class="message">
-        <a href="" class="message_profile-pic"></a>
-        <a href="" class="message_username">scotch</a>
-        <span class="message_timestamp">1:31 AM</span>
-        <span class="message_star"></span>
-        <span class="message_content">Some sample text</span>
+  <div class="listings">
+    <div class="listings_channels">
+      <h2 class="listings_header">Channels</h2>
+      <ul class="channel_list">
+        {{#each channels}}
+          {{> channel name=name}}
+        {{/each}}
+      </ul>
+      
+    </div>
+    <div class="listings_direct-messages"></div>
+    <p class="disclaimer">This demo is not created by, affiliated with, or supported by Slack Technologies, Inc.</p>
   </div>
 </template>
