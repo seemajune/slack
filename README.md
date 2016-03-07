@@ -20,3 +20,6 @@ For example, you’d manually call Accounts.createUser() to create the user, and
 
 note: oauth- need to add accounts-google, accounts-facebook, accounts-twitter for easy sign up
 
+modify default email template w/ Accounts.emailTemplates
+
+note: Template.registerHelper() function to define a helper function which can be used from all templates.
