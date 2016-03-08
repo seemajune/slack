@@ -24,8 +24,6 @@ Meteor.startup(function() {
     name: "cancer"
   });
 
-  Session.set('channel', 'general');
-
   Factory.define('message', Messages, {
     text: function(){
       return Fake.sentence();

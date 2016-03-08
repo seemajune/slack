@@ -73,7 +73,7 @@ html {
   position: relative;
   height: 100%;
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* line 16, ../tests/sass/_layout.scss */
@@ -119,7 +119,7 @@ body {
   color: #ffffff;
   background: #1CBDE7;
   border-bottom: 2px solid #1CBDE7;
-  float: left;
+  float: right;
   cursor: pointer;
 }
 
@@ -145,7 +145,7 @@ body {
 .listings {
   height: 100%;
   width: 220px;
-  float: left;
+  float: right;
   color: #111;
   background-color: #1CBDE7;
   overflow-y: auto;
@@ -154,7 +154,6 @@ body {
 
 /* line 11, ../tests/sass/components/_main.scss */
 .message-history {
-  margin-left: 220px;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100%;
@@ -199,6 +198,12 @@ body {
   margin-right: 17px;
   color: #ffffff;
   padding-left: 1rem;
+}
+
+.channel_name {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
 }
 
 /* line 35, ../tests/sass/components/_listings.scss */
@@ -292,7 +297,6 @@ body {
 
 /* line 4, ../tests/sass/components/_user-menu.scss */
 .user-menu {
-  float: left;
   width: 220px;
   height: 100%;
   cursor: pointer;
@@ -302,13 +306,13 @@ body {
   height: 4rem;
   position: fixed;
   bottom: 0;
-  left: 0;
+  right: 0;
 }
 
 /* line 18, ../tests/sass/components/_user-menu.scss */
 .user-menu_profile-pic {
   display: inline-block;
-  float: left;
+  float: right;
   -moz-border-radius: 0.2rem;
   -webkit-border-radius: 0.2rem;
   border-radius: 0.2rem;
@@ -343,7 +347,7 @@ body {
 /* line 1, ../tests/sass/components/_input-box.scss */
 .input-box {
   height: 100%;
-  margin-left: 220px;
+  margin-right: 220px;
 }
 
 /* line 6, ../tests/sass/components/_input-box.scss */
