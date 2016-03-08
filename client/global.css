@@ -117,8 +117,8 @@ body {
   font-weight: 900;
   padding: 0 1rem;
   color: #ffffff;
-  background: #3e313c;
-  border-bottom: 2px solid #372c36;
+  background: #1CBDE7;
+  border-bottom: 2px solid #1CBDE7;
   float: left;
   cursor: pointer;
 }
@@ -127,7 +127,7 @@ body {
 .channel-menu_name {
   display: inline-block;
   padding: 0 .5rem 0 1.5rem;
-  color: #555459;
+  color: #1CBDE7;
   font-size: 1.4rem;
   font-weight: 900;
   line-height: 53px;
@@ -146,8 +146,8 @@ body {
   height: 100%;
   width: 220px;
   float: left;
-  color: #ab9ba9;
-  background-color: #4d394b;
+  color: #111;
+  background-color: #1CBDE7;
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -174,7 +174,7 @@ body {
   margin: 0 1rem .1rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ab9ba9;
+  color: #111;
   width: 165px;
   position: relative;
 }
@@ -296,8 +296,8 @@ body {
   width: 220px;
   height: 100%;
   cursor: pointer;
-  background: #3e313c;
-  border-top: 2px solid #372c36;
+  background: #1CBDE7;
+  border-top: 2px solid #1CBDE7;
   padding: 7px 0 9px 8px;
   height: 4rem;
   position: fixed;
@@ -337,7 +337,7 @@ body {
 
 /* line 43, ../tests/sass/components/_user-menu.scss */
 .connection_status {
-  color: #ab9ba9;
+  color: #111;
 }
 
 /* line 1, ../tests/sass/components/_input-box.scss */

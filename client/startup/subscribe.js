@@ -1,6 +1,5 @@
-
 Meteor.subscribe('channels');
-Meteor.subscribe('allUsernames');
+Meteor.subscribe('allUserNames');
 
 Template.messages.onCreated(function() {
   var self = this;
